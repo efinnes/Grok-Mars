@@ -1,0 +1,8 @@
+{
+  "name": "GrokMars",
+  "title": "GrokMars",
+  "description": "Recon Mars, pick a capitol, hold the sky, keep the bots alive.",
+  "type": "x:game",
+  "card": "custom",
+  "color": "c17a52"
+}

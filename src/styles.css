@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #1a120e;
+  --color-fg: #f0e6d8;
+  --color-muted: #c4b09a;
+  --color-subtle: #8a7666;
+  --color-surface: #2a1f18;
+  --color-surface-2: #3a2c22;
+  --color-border: #4a3a2c;
+  --color-accent: #c9a48a;
+  --color-accent-fg: #1a120e;
+  --color-hud: #9dba7a;
+  --color-danger: #c47a6a;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "IBM Plex Serif", ui-serif, Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --radius-sm: 0.4rem;
+  --radius-md: 0.7rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  html,
+  body,
+  #app {
+    height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+}
+
+.panel {
+  background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(10px);
+}
+.hud-num {
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
+}
+.font-display {
+  font-family: var(--font-display);
+}
